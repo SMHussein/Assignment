@@ -1,0 +1,30 @@
+.heading-primary {
+  font-size: 3rem;
+  padding-right: 5.5rem;
+
+  @media only screen and (min-width: $bp-phone) {
+    padding-right: 0;
+  }
+}
+
+.heading-secondery {
+  font-size: 2.5rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+}
+
+.heading-primary,
+.heading-secondery,
+.heading-tertiary {
+  font-weight: 600;
+  color: $color-header;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}

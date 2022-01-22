@@ -1,0 +1,22 @@
+.nav-left {
+  margin-bottom: 2rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    font-size: 1.7rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.7rem;
+    }
+  }
+}

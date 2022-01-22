@@ -1,0 +1,47 @@
+.header {
+  border-bottom: 1.5px solid $color-primary;
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  height: 5rem;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 0.7rem 3rem;
+  display: inline-block;
+  background-color: $color-primary;
+  line-height: 1;
+}
+
+.paragraph__logo {
+  font-weight: 400;
+  font-size: 2rem;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.main,
+.header {
+  padding: 1rem;
+  @media only screen and (min-width: $bp-phone) {
+    padding: 2rem;
+  }
+}
+
+.main {
+  @media only screen and (min-width: $bp-phone) {
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 35vw);
+    grid-gap: 1rem;
+  }
+
+  @media only screen and (min-width: $bp-tab) {
+    max-width: 70%;
+    grid-template-columns: 1fr minmax(min-content, 25vw);
+  }
+}
